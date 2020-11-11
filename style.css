@@ -1,0 +1,68 @@
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    margin: 0 auto;
+    background-image: url(img/dog.png);
+    width: 400px;
+    background-size: 400px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.moveMe{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/img1.png);
+    
+    transition: transform .8s ease-in-out;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 200px;
+}
+.moveMe2{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+    transition: transform .8s ease-in-out;
+    position: absolute;
+    left: 408px;
+}
+
+.wrapper .tile:nth-last-of-type(odd){
+    background-color: blanchedalmond;
+}
+
+.wrapper .tile:nth-last-of-type(even){
+    background-color: black;
+}
+.moved{
+    transform: translateX(calc(300px - 48px - 2px));
+    
+}
+
+.moveMe:nth-of-type(2){
+    background-image: url(img/img2.png);
+}
+.moveMe:nth-of-type(3){
+    background-image: url(img/img3.png);
+}
+.moveMe:nth-of-type(4){
+    background-image: url(img/img4.png);
+}
+.moveMe:nth-of-type(5){
+    background-image: url(img/img5.png);
+}
+.moveMe:nth-of-type(6){
+    background-image: url(img/img6.png);
+}
+.moveMe:nth-of-type(7){
+    background-image: url(img/img7.png);
+}
+.moveMe:nth-of-type(8){
+    background-image: url(img/img8.png);
+    
+}
